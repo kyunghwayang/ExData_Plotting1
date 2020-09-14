@@ -46,11 +46,6 @@ with(metering, plot(DT, Metering, type="n", ylab="Energy sub metering", xlab="")
 with(subset(metering, SubType=="sub_metering_1"), lines(DT, Metering, type="l"))
 with(subset(metering, SubType=="sub_metering_2"), lines(DT, Metering, type="l", col="red"))
 with(subset(metering, SubType=="sub_metering_3"), lines(DT, Metering, type="l", col="blue"))
-# legend("topright", lty=1, col=c("black", "red","blue"), 
-#        legend=c(levels(g)),
-#        box.lty=0, # no border
-#        y.intersp = 0.5,
-#        inset = c(0, 0.01))
 
 legend("topright",
        lty=rep(1, 3), col=c("black", "red","blue"), 
